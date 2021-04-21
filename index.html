@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./images/favicon-32x32.png"
+        />
+        <link rel="stylesheet" href="style.css" />
+        <title>Todo app</title>
+    </head>
+    <body>
+        <header>
+            <h1>ToDo</h1>
+            <input type="checkbox" id="toggle" aria-label="theme-toggle" />
+            <label for="toggle" id="toggle-icon"></label>
+        </header>
+        <form class="task-input">
+            <label for="task-new"></label>
+            <input
+                type="text"
+                name="task-new"
+                id="task-new"
+                placeholder="Create a new todo..."
+                maxlength="36"
+                minlength="2"
+            />
+        </form>
+        <div class="tasks-section">
+            <ul class="task-list"></ul>
+            <div class="tasks-footer">
+                <span id="task-total">No tasks</span>
+                <ul class="controls-list">
+                    <li id="all">All</li>
+                    <li id="active">Active</li>
+                    <li id="completed">Completed</li>
+                </ul>
+                <a id="task-clear">Clear Completed</a>
+            </div>
+        </div>
+        <span class="footer-note">Drag and drop to reorder list</span>
+        <script src="script.js"></script>
+    </body>
+</html>
